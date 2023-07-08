@@ -2,12 +2,11 @@
 Its the backend structure for a quiz database.
 
 ## Description
-it has Category, Quizzes and Updated tables in the database. 
+It has Category, Quizzes and Updated tables in the database. 
 
 ### Dependencies
 * Django
 * Django rest framework 
-* Windows 10
 * Python version 3.10.6 
 
 
@@ -17,16 +16,26 @@ it has Category, Quizzes and Updated tables in the database.
 
  
 ```python
-$ virtualenv venv
+$ py -m venv venv
 ```
 
 To activate the virtual environment, execute the below command.
 
 ```python
-$ source venv/Script/activate
+$ source venv/Scripts/activate
 ```
 Clone this repository in the projects' working directory by executing the command below.
 
 ```python
 $ git clone https://github.com/ajaoooluseyi/quiz-api.git
+$ cd quiz-api
+```
+To install all the required dependencies execute the below command.
+
+```python
+$ pip install -r requirements.txt
+```
+To run the app, navigate to the app folder in your virtual environment and execute the command below
+```python
+$ py manage.py runserver
 ```
